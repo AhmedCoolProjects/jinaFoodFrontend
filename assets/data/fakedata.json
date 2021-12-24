@@ -1,0 +1,254 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "johndoe@gmail.com",
+      "phone": "064556789",
+      "title": "M.",
+      "salary": 3000,
+      "birthday": "01/01/2000"
+    },
+    {
+      "id": 2,
+      "first_name": "JaneJane",
+      "last_name": "DoeDoe",
+      "email": "johndoe@gmail.com",
+      "phone": "064556789",
+      "title": "Mme",
+      "salary": 3000,
+      "birthday": "01/01/2000"
+    }
+  ],
+  "foods": [
+    {
+      "id": 11,
+      "title": "Pizza",
+      "description": "Pizza from Italy",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/school-projects-94661.appspot.com/o/jinafood%2Fproducts%2Fpizza1.jpg?alt=media&token=1ed4a1f3-3094-45df-ad55-139c2853320f"
+      ],
+      "salePrice": 10,
+      "regularPrice": 20,
+      "category": ["pizza"],
+      "ingredients": ["tomato", "cheese", "sauce"]
+    },
+    {
+      "id": 111,
+      "title": "Pizza",
+      "description": "Pizza from Italy",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/school-projects-94661.appspot.com/o/jinafood%2Fproducts%2Fpizza1.jpg?alt=media&token=1ed4a1f3-3094-45df-ad55-139c2853320f"
+      ],
+      "salePrice": 12.22,
+      "regularPrice": 20,
+      "category": ["pizza"],
+      "ingredients": ["tomato", "cheese", "sauce"]
+    },
+    {
+      "id": 121,
+      "title": "Pizza",
+      "description": "Pizza from Italy",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/school-projects-94661.appspot.com/o/jinafood%2Fproducts%2Fpizza1.jpg?alt=media&token=1ed4a1f3-3094-45df-ad55-139c2853320f"
+      ],
+      "salePrice": 12.22,
+      "regularPrice": 20,
+      "category": ["pizza"],
+      "ingredients": ["tomato", "cheese", "sauce"]
+    },
+    {
+      "id": 12,
+      "title": "Tagine",
+      "description": "Tagine from Italy",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/school-projects-94661.appspot.com/o/jinafood%2Fproducts%2Ffood1.jpg?alt=media&token=c52912c8-7ad8-460a-8485-83944029cf48"
+      ],
+      "salePrice": 10,
+      "regularPrice": 20,
+      "category": ["tagine"],
+      "ingredients": ["tomato", "cheese", "sauce"]
+    },
+    {
+      "id": 1,
+      "title": "Pizza",
+      "description": "Pizza from Italy",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/school-projects-94661.appspot.com/o/jinafood%2Fproducts%2Fpizza1.jpg?alt=media&token=1ed4a1f3-3094-45df-ad55-139c2853320f"
+      ],
+      "salePrice": 10,
+      "regularPrice": 20,
+      "category": ["pizza"],
+      "ingredients": ["tomato", "cheese", "sauce"]
+    },
+    {
+      "id": 2,
+      "title": "Tagine",
+      "description": "Tagine from Italy",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/school-projects-94661.appspot.com/o/jinafood%2Fproducts%2Ffood1.jpg?alt=media&token=c52912c8-7ad8-460a-8485-83944029cf48"
+      ],
+      "salePrice": 10,
+      "regularPrice": 20,
+      "category": ["tagine"],
+      "ingredients": ["tomato", "cheese", "sauce"]
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "commands": [
+        {
+          "product": {
+            "id": 1,
+            "title": "Pizza",
+            "description": "Pizza from Italy",
+            "images": [],
+            "salePrice": 10,
+            "regularPrice": 20,
+            "category": ["pizza"],
+            "ingredients": ["tomato", "cheese", "sauce"]
+          },
+          "count": 2,
+          "totalPrice": 20
+        }
+      ],
+      "totalPrice": 0,
+      "date": "01/01/2000",
+      "cutomer": {},
+      "isDone": false
+    },
+    {
+      "id": 2,
+      "commands": [
+        {
+          "product": {
+            "id": 1,
+            "title": "Pizza",
+            "description": "Pizza from Italy",
+            "images": [],
+            "salePrice": 10,
+            "regularPrice": 20,
+            "category": ["pizza"],
+            "ingredients": ["tomato", "cheese", "sauce"]
+          },
+          "count": 2,
+          "totalPrice": 20
+        }
+      ],
+      "totalPrice": 20,
+      "date": "01/01/2000",
+      "cutomer": {},
+      "isDone": true
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "first_name": "jina",
+      "last_name": "LeeBargady",
+      "email": "jinaLeeBargady@gmail.com",
+      "phone": "064556789",
+      "title": "Mme",
+      "address": "1 rue de la paix"
+    },
+    {
+      "id": 2,
+      "first_name": "BargadyAhmed",
+      "last_name": "Sujina",
+      "email": "jinaLeeBargady@gmail.com",
+      "phone": "064556789",
+      "title": "M.",
+      "address": "2505 S. Berendo St."
+    }
+  ],
+  "tables": [
+    {
+      "id": 1,
+      "number": 1,
+      "size": 4,
+      "isAvailable": true,
+      "stage": 1
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "size": 3,
+      "isAvailable": false,
+      "stage": 0
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "text": "Jina Food is the best Restuaurent in the world",
+      "date": "01/01/2021",
+      "user": {
+        "id": 1,
+        "first_name": "jina",
+        "last_name": "LeeBargady",
+        "email": "jinaLeeBargady@gmail.com",
+        "phone": "064556789",
+        "title": "Mme",
+        "address": "1 rue de la paix"
+      }
+    },
+    {
+      "id": 2,
+      "text": "Jina Food is the best  in the world",
+      "date": "01/01/2020",
+      "user": {
+        "id": 1,
+        "first_name": "jina",
+        "last_name": "LeeBargady",
+        "email": "jinaLeeBargady@gmail.com",
+        "phone": "064556789",
+        "title": "Mme",
+        "address": "1 rue de la paix"
+      }
+    },
+    {
+      "id": 111,
+      "text": "Jina Food is the best Restuaurent in the world",
+      "date": "01/01/2000",
+      "user": {
+        "id": 18,
+        "first_name": "jina",
+        "last_name": "LeeBargady",
+        "email": "jinaLeeBargady@gmail.com",
+        "phone": "064556789",
+        "title": "Mme",
+        "address": "1 rue de la paix"
+      }
+    },
+    {
+      "id": 12,
+      "text": "Jina Food is the best Restuaurent in the world",
+      "date": "01/01/2000",
+      "user": {
+        "id": 1,
+        "first_name": "jina",
+        "last_name": "LeeBargady",
+        "email": "jinaLeeBargady@gmail.com",
+        "phone": "064556789",
+        "title": "Mme",
+        "address": "1 rue de la paix"
+      }
+    },
+    {
+      "id": 15,
+      "text": "Jina Food is the best Restuaurent in the world",
+      "date": "01/01/2000",
+      "user": {
+        "id": 1,
+        "first_name": "jina",
+        "last_name": "LeeBargady",
+        "email": "jinaLeeBargady@gmail.com",
+        "phone": "064556789",
+        "title": "Mme",
+        "address": "1 rue de la paix"
+      }
+    }
+  ]
+}

@@ -8,7 +8,9 @@ function Header() {
   return (
     <header className="w-full relative flex flex-col">
       <div className="w-full justify-between relative flex flex-row py-3">
-        <Button className="z-10">About</Button>
+        <Link href="/about" passHref>
+          <Button className="z-10">About</Button>
+        </Link>
         <div className="flex absolute top-0 left-0 w-full h-full flex-col justify-center items-center">
           <Link href="/">
             <h1 className="text-2xl cursor-pointer font-semibold text-white">
@@ -16,9 +18,11 @@ function Header() {
             </h1>
           </Link>
         </div>
-        <IconButton>
-          <ShoppingCartRounded color="primary" />
-        </IconButton>
+        <Link href="/basket" passHref>
+          <IconButton>
+            <ShoppingCartRounded color="primary" />
+          </IconButton>
+        </Link>
       </div>
       <hr className="h-px bg-gray-400 opacity-90 w-full" />
       <div className="w-full justify-end items-center flex flex-row py-2">

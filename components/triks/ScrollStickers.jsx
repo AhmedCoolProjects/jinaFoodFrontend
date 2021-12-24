@@ -30,7 +30,7 @@ const STICKERS = [
 
 function ScrollStickers() {
   return (
-    <div className="w-full py-2 my-3 sm:justify-between space-x-3 items-center flex flex-row">
+    <div className="w-full py-2 my-3 mt-[200px] sm:justify-between space-x-3 items-center flex flex-row">
       {STICKERS.map((sticker) => (
         <div
           key={sticker.id}

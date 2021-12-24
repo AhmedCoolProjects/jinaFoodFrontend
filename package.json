@@ -12,6 +12,7 @@
     "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.2.4",
     "@mui/material": "^5.2.4",
+    "@mui/styles": "^5.2.3",
     "@tailwindcss/line-clamp": "^0.3.0",
     "axios": "^0.24.0",
     "firebase": "^9.6.1",
