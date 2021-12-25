@@ -18,11 +18,18 @@ function Header() {
             </h1>
           </Link>
         </div>
-        <Link href="/basket" passHref>
-          <IconButton>
-            <ShoppingCartRounded color="primary" />
-          </IconButton>
-        </Link>
+        <div className="flex flex-row items-center space-x-3">
+          <Link href={false ? "/auth" : "/profile"} passHref>
+            <Button size="small" className="z-10">
+              {false ? "Login" : "Profile"}
+            </Button>
+          </Link>
+          <Link href="/basket" passHref>
+            <IconButton>
+              <ShoppingCartRounded color="primary" />
+            </IconButton>
+          </Link>
+        </div>
       </div>
       <hr className="h-px bg-gray-400 opacity-90 w-full" />
       <div className="w-full justify-end items-center flex flex-row py-2">

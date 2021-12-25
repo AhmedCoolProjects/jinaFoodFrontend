@@ -6,6 +6,7 @@ import likes from "@as/images/svg/likes.svg";
 import logo from "@as/images/svg/logo.svg";
 import burak from "@as/images/burak.jpg";
 import place from "@as/images/place.jpg";
+import ahmedbargady from "@as/images/ahmedbargady.jpg";
 
 export default {
   big_pic,
@@ -16,4 +17,5 @@ export default {
   burak,
   logo,
   place,
+  ahmedbargady,
 };
