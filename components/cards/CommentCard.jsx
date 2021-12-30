@@ -9,7 +9,7 @@ function CommentCard({ comment }) {
       elevation={3}
     >
       <div className="flex flex-1 items-center flex-col">
-        <h1 className="text-xl ">"{comment.text}"</h1>
+        <h1 className="text-xl ">&quot;{comment.text}&quot;</h1>
         <h1 className="italic opacity-80 text-base">{`${comment.user.last_name} ${comment.user.first_name}`}</h1>
       </div>
       <Image
