@@ -117,8 +117,8 @@ export default function Home() {
                 height={160}
               />
               <h1 className="text-xl text-center">
-                "Jina Food is where you can find the best food with the best
-                price and the best quality."
+                &quot;Jina Food is where you can find the best food with the
+                best price and the best quality.&quot;
               </h1>
               <h1 className="text-right opacity-80 italic text-base">
                 - CZN Burak
