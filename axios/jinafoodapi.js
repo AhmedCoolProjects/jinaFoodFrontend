@@ -3,10 +3,10 @@ import http from "./http-common";
 class JinaFoodAPI {
   // Employee
   getAllEmployees() {
-    return http.get(`/employee/getall`);
+    return http.get(`/employee`);
   }
   getEmployeeById(id) {
-    return http.get(`/employee/get/${id}`);
+    return http.get(`/employee/id/${id}`);
   }
   addEmployee(data) {
     return http.post(`/employee/add`, data);
@@ -40,18 +40,18 @@ class JinaFoodAPI {
   deleteOrder(id) {
     return http.post(`/order/delete/${id}`);
   }
-  // Food
-  getAllFoods() {
-    return http.get(`/food/getall`);
+  // products
+  getProducts() {
+    return http.get(`/product`);
   }
-  getFoodById(id) {
-    return http.get(`/food/get/${id}`);
+  getProductById(id) {
+    return http.get(`/product/id/${id}`);
   }
-  addFood(data) {
-    return http.post(`/food/add`, data);
+  addProduct(data) {
+    return http.post(`/product/add`, data);
   }
-  deleteFood(id) {
-    return http.post(`/food/delete/${id}`);
+  deleteProduct(id) {
+    return http.post(`/product/delete/${id}`);
   }
 }
 export default new JinaFoodAPI();

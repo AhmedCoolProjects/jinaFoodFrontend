@@ -78,37 +78,18 @@ function FoodCard({ food }) {
             <ExpandMore />
           </IconButton>
         </div>
-        <Collapse in={expanded} timeout="auto" unmountOnExit>
-          <CardContent>
+        {/* <Collapse in={expanded} timeout="auto" unmountOnExit>
+           <CardContent>
             <h1 className="text-xl underline">ingredients:</h1>
             <ul className="flex-wrap w-full p-2">
               {food.ingredients.map((ingr) => (
                 <li className="list-item text-sm font-semibold" key={ingr}>
                   {ingr}
                 </li>
-              ))}
+               ))} 
             </ul>
-            {/* <Link
-              href={{
-                pathname: "/food",
-                query: {
-                  id: project.id,
-                },
-              }}
-              passHref
-            >
-              <Button
-                variant="outlined"
-                fullWidth
-                color="primary"
-                style={{ marginTop: 12 }}
-                endIcon={<Launch color="primary" />}
-              >
-                check more
-              </Button>
-            </Link> */}
-          </CardContent>
-        </Collapse>
+          </CardContent> 
+        </Collapse> */}
       </Card>
     </Grid>
   );

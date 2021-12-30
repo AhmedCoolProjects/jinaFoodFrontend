@@ -7,11 +7,19 @@ import fakeData from "@as/data/fakedata.json";
 import { Telegram } from "@mui/icons-material";
 import Image from "next/image";
 import CommentCard from "@comp/cards/CommentCard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MoreCard from "@comp/cards/MoreCard";
+import JinaFoodAPI from "axios/jinafoodapi";
 
 export default function Home() {
   const [specialCustomerEmail, setSpecialCustomerEmail] = useState("");
+  const [products, setProducts] = useState(null);
+  useEffect(() => {
+    JinaFoodAPI.getProducts().then((res) => {
+      setProducts(res.data);
+    });
+  }, []);
+  if (!products) return null;
   return (
     <div>
       <Head>
@@ -62,7 +70,7 @@ export default function Home() {
           <h1 className="text-2xl text-center">Special Offers</h1>
           <hr className="h-px bg-white w-full my-5" />
           <Grid container spacing={3}>
-            {fakeData.foods.slice(0, 5).map((food) => (
+            {products.slice(0, 5).map((food) => (
               <FoodCard key={food.id} food={food} />
             ))}
             <MoreCard link="/foods" />
